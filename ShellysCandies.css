@@ -1,0 +1,186 @@
+/* =========================================================
+   GLOBAL RESET & BASE STYLES
+   ========================================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px; /* Luxury base size */
+}
+
+body {
+    background-color: #F6E7C5; /* Vanilla Cream */
+    color: #3B2F2F; /* Dark Cocoa Text */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.65;
+    padding-bottom: 3rem;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+h1, h2, h3 {
+    text-align: center;
+    color: #8C3B0D; /* Brown Sugar */
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-top: 2.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+p, footer {
+    font-size: 1.15rem;
+    margin: 1.4rem auto;
+    max-width: 42rem; /* ~672px */
+    text-align: center;
+    padding: 0 1rem;
+    color: #3B2F2F;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   NAVIGATION BAR (Responsive)
+   ========================================================= */
+.navbar {
+    background-color: #ce8946; /* Warm Caramel */
+    color: #3B2F2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1.6rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 0.25rem solid #DFAE4F; /* Honey Gold */
+}
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    color: #3B2F2F;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3B2F2F;
+    font-size: 1rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+    color: #E8C27A; /* Buttery Gold */
+    transform: translateY(-2px);
+}
+
+/* Hamburger Menu Button (Hidden on Desktop) */
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-toggle .bar {
+    display: block;
+    width: 1.6rem;
+    height: 0.2rem;
+    background-color: #3B2F2F;
+    margin: 0.28rem 0;
+    transition: 0.4s;
+    border-radius: 0.15rem;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 3.6rem;
+        right: 0;
+        background-color: #B66A2C;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 1.3rem 0;
+        display: none;
+        border-bottom: 0.25rem solid #DFAE4F;
+    }
+
+    .nav-links a {
+        padding: 0.9rem 0;
+        font-size: 1.25rem;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links.show-nav {
+        display: flex;
+    }
+}
+
+/* =========================================================
+   IMAGES — Boutique Product Display
+   ========================================================= */
+.photo {
+    display: block;
+    margin: 2.2rem auto;
+    width: 100%;
+    max-width: 32.5rem; /* ~520px boutique size */
+    border-radius: 0.55rem; /* Slightly rounded corners */
+    box-shadow: 0 0.38rem 0.9rem rgba(0, 0, 0, 0.12); /* Soft elegant shadow */
+    object-fit: cover;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.ordertoffee {
+    background-color: #8C3B0D; /* Rich Caramel */
+    color: #F6E7C5; /* Cream */
+    padding: 0.85rem 2.1rem;
+    font-size: 1.15rem;
+    border-radius: 2rem;
+    border: 0.15rem solid #DFAE4F;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.ordertoffee:hover {
+    background-color: #B66A2C;
+    transform: scale(1.06);
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 3.5rem;
+    padding: 1rem;
+    color: #3B2F2F;
+}

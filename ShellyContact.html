@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Shelly</title>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="ShellysCandies.css" />
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <div class="brand">Shelly’s Homemade Toffee</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#contact-info">Contact Us</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+
+    <main style="margin-top: 3.5rem;"> <!-- Warm Luxury Top Spacing -->
+
+        <!-- PAGE TITLE -->
+        <h1>Get Delicious Toffee Delivered to Your Door</h1>
+
+        <!-- CONTACT INFO SECTION -->
+        <section id="contact-info" style="margin-top: 2.5rem;">
+
+            <h3>Contact Information</h3>
+
+            <p style="max-width: 700px;">
+                To place an order, request pricing, or ask any questions, please reach out
+                using the contact details below. We look forward to sharing our homemade toffee with you!
+            </p>
+
+            <ul style="list-style: none; padding: 0; margin-top: 1.8rem; font-size: 1.25rem; line-height: 2;">
+                <li><strong>Phone:</strong> <a href="tel:13609101768">(360) 910-1768</a></li>
+                <li><strong>Email:</strong> <a href="mailto:michellem86@msn.com">michellem86@msn.com</a></li>
+                <li><strong>Facebook Messenger:</strong> Michelle Peacock-Moody</li>
+            </ul>
+        </section>
+
+        <!-- IMAGE -->
+        <figure style="margin-top: 3rem;">
+            <img class="photo" src="imagesShellysCandies/ToffeeGift1.jpeg" alt="Gift container filled with homemade toffee" />
+        </figure>
+
+        <!-- BUTTON BACK HOME -->
+        <div class="button-container" style="margin-top: 2.8rem;">
+            <a href="index.html" class="ordertoffee">Return Home</a>
+        </div>
+
+    </main>
+
+
+    <footer style="margin-top: 4rem;">
+        &copy; 2025 Shelly’s Homemade Toffee. All rights reserved.
+    </footer>
+
+
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('show-nav');
+        });
+    </script>
+
+</body>
+</html>
